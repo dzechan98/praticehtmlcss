@@ -1,0 +1,118 @@
+@media (max-width: 1023px) {
+  .information-title,
+  .information-decs1,
+  .col-title {
+    font-size: 1.2rem;
+  }
+  .slide__item-text {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  .information-decs2,
+  .section2-header__text,
+  .col-text {
+    font-size: 1.1rem;
+  }
+  .slide__item-content h2,
+  .slide__item-content span {
+    font-size: 1.4rem;
+  }
+  .information-app img {
+    width: 81px;
+    height: 24px;
+    margin: 0;
+  }
+  .information-app img:first-child {
+    margin-right: 20px;
+  }
+  .col-content-img {
+    width: 101px;
+    height: 101px;
+  }
+  .col-content span {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 701px) and (max-width: 1023px) {
+  .section1-header {
+    padding: 10px 8%;
+  }
+  .section1-container {
+    padding: 60px 86px 0;
+  }
+  .iphone-img img {
+    width: 220px;
+    height: 337px;
+  }
+  .information-title {
+    margin-bottom: 60px;
+  }
+  .information-name {
+    font-size: 3.6rem;
+  }
+  .information-decs2 {
+    margin-bottom: 40px;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .btn {
+    font-size: 4rem;
+  }
+  .slide-wrapper {
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .section1-header {
+    display: none;
+  }
+  .section1-container {
+    justify-content: center;
+    padding: 50px 0 20px;
+    padding-left: calc((100% -225px) / 2);
+    padding-right: calc((100% -225px) / 2);
+  }
+  .information {
+    flex: 1;
+  }
+  .information-name {
+    font-size: 3.2rem;
+    margin: 0;
+    padding: 0 0 30px 15px;
+  }
+  .information-title {
+    margin-bottom: 30px;
+  }
+  .information-img {
+    display: block;
+  }
+  .iphone-img img {
+    display: none;
+  }
+  .information-decs2 {
+    margin-bottom: 20px;
+  }
+  .information-app {
+    margin: 20px 0;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .col-box {
+    width: 180px;
+  }
+  .col-4 {
+    flex-basis: 100%;
+  }
+  .section3 .slideShow {
+    padding: 0;
+  }
+  .slide-wrapper {
+    padding: 0 5%;
+  }
+  .btn {
+    display: none !important;
+  }
+}
