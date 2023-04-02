@@ -10,7 +10,7 @@ let index = 0;
 function tonggleAnimationElementWindow(element) {
   let rect = element.getClientRects()[0];
   let heightScreen = window.innerHeight;
-  if (!(rect.bottom < 0 || rect.top > heightScreen)) {
+  if (!(rect?.bottom < 0 || rect?.top > heightScreen)) {
     element.classList.add("start");
   } else {
     element.classList.remove("start");
