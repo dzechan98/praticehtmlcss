@@ -1,17 +1,30 @@
 @media (max-width: 1023px) {
+  :root {
+    --section6-img: -50px;
+  }
   .information-title,
   .information-decs1,
-  .col-title {
+  .col-title,
+  .section7-col-content__title,
+  .col-btn {
     font-size: 1.2rem;
   }
   .slide__item-text {
     font-size: 1.4rem;
     line-height: 2.8rem;
   }
+  .section-input,
+  .section6-item__title {
+    font-size: 1.4rem;
+  }
   .information-decs2,
-  .section2-header__text,
-  .col-text {
+  .text,
+  .col-text,
+  .section7-col-content__price {
     font-size: 1.1rem;
+  }
+  .section7-col-content__price span {
+    font-size: 3.6rem;
   }
   .slide__item-content h2,
   .slide__item-content span {
@@ -31,6 +44,39 @@
   }
   .col-content span {
     font-size: 2rem;
+  }
+  .col-img img {
+    height: 160px;
+    width: 160px;
+  }
+  .see {
+    font-size: 2rem;
+  }
+  .col-img-label {
+    font-size: 1.4rem;
+  }
+  .section__header {
+    padding: 0 5%;
+  }
+  .section6-container {
+    padding: 60px 5% 40px;
+  }
+  .section-7 {
+    padding: 60px 5%;
+  }
+  .form-input input,
+  textarea,
+  .form-label {
+    font-size: 1.4rem;
+  }
+  .footer {
+    padding: 30px 5%;
+  }
+  .col-footer {
+    min-height: 220px;
+  }
+  .footer-information-right i {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 701px) and (max-width: 1023px) {
@@ -62,8 +108,11 @@
   .slide-wrapper {
     width: 500px;
   }
+  .col {
+    flex-basis: 25%;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 710px) {
   .section1-header {
     display: none;
   }
@@ -100,19 +149,54 @@
   .title {
     font-size: 2rem;
   }
-  .col-box {
-    width: 180px;
+  .slide-wrapper {
+    width: calc(100vw -10%);
   }
   .col-4 {
     flex-basis: 100%;
   }
   .section3 .slideShow {
-    padding: 0;
-  }
-  .slide-wrapper {
     padding: 0 5%;
   }
   .btn {
     display: none !important;
+  }
+  .col {
+    flex: 1 0 100%;
+    margin-bottom: 30px;
+  }
+  .section6-item {
+    flex: 1;
+  }
+  .section6-item.active {
+    display: none;
+  }
+  .section7-col {
+    flex-basis: 48%;
+    margin-bottom: 4%;
+  }
+  .contact .text {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+  .contact {
+    padding: 0 5%;
+    justify-content: flex-start;
+  }
+  .col-footer {
+    flex-basis: 48%;
+  }
+  .footer-information {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .footer-information-left {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .section7-col {
+    flex-basis: 100%;
+    margin-bottom: 5%;
   }
 }
