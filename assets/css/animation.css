@@ -25,12 +25,21 @@
   opacity: 1;
   transform: translateY(0);
 }
-.skew-animation {
+.zoom-animation {
   opacity: 0;
-  transform: rotate(90deg) scale(0);
+  transform: scale(0);
   transition: 1s;
 }
-.skew-animation.start {
+.zoom-animation.start {
   opacity: 1;
-  transform: rotate(0) scale(1);
+  transform: scale(1);
+}
+.scale-animation {
+  opacity: 0;
+  transform: scaleX(-1);
+  transition: 1s;
+}
+.scale-animation.start {
+  opacity: 1;
+  transform: scaleX(1);
 }

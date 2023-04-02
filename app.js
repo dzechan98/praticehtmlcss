@@ -18,7 +18,7 @@ function tonggleAnimationElementWindow(element) {
 }
 
 function checkAnimation() {
-  animationElement.forEach((el) => {
+  [...animationElement].forEach((el) => {
     tonggleAnimationElementWindow(el);
   });
 }
