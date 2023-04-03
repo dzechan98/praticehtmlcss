@@ -4,7 +4,6 @@ const prevBtn = document.querySelector(".prev");
 const slideWrapper = document.querySelector(".slide-wrapper");
 const slideMain = document.querySelector(".slide_main");
 const slideItem = document.querySelectorAll(".slide__item");
-const slideWidth = slideWrapper.offsetWidth;
 let positionX = 0;
 let index = 0;
 function tonggleAnimationElementWindow(element) {
@@ -33,7 +32,7 @@ window.onscroll = checkAnimation;
 
 nextBtn.onclick = function () {
   index++;
-  console.log(slideWidth);
+  const slideWidth = slideWrapper.offsetWidth;
   if (index > slideItem.length - 1) {
     index = 0;
     positionX = slideWidth;
@@ -44,6 +43,7 @@ nextBtn.onclick = function () {
 
 prevBtn.onclick = function () {
   index--;
+  const slideWidth = slideWrapper.offsetWidth;
   if (index < 0) {
     index = slideItem.length - 1;
     positionX = -(index + 1) * slideWidth;
